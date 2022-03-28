@@ -46,6 +46,7 @@ class KhachHang{
 		void nhap()
 		{
 			cout<<"\nNhap ho ten: ";
+			fflush(stdin);
 			cin.ignore();
 			cin.getline(hoten, 30);
 			cout<<"\nNhap ngay sinh : ";

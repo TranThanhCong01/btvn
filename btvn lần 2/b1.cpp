@@ -105,6 +105,18 @@ int main(int argc, char *argv[])
 	}
 	xuat2();
 	cout<<"\nXuat thong tin khach hang da sap xep: "<<endl;
+	
+	
+	
+	
+	for(int i = 0; i < n; i++)
+	{
+		for(int j = i; j < n; j++)
+	    {
+		    if(a[j].sx()<a[i].sx()) {mm=a[i];a[i]=a[j];a[j]=mm;}
+	    }
+	}
+	
 	xuat1();
 	for(int i = 0; i < n; i++)
 	{
@@ -112,15 +124,6 @@ int main(int argc, char *argv[])
 	}
 	xuat2();
 	
-	
-	
-	for(int i = 0; i < n; i++)
-	{
-		for(int j = 0; j < n; j++)
-	    {
-		    if(a[j].sx()>a[i].sx()) {mm=a[i];a[i]=a[j];a[j]=mm;}
-	    }
-	}
 	cout<<"\nXuat thong tin khach hang sinh nhat thang 12: "<<endl;
 	xuat1();
 	for(int i = 0; i < n; i++)
@@ -130,4 +133,3 @@ int main(int argc, char *argv[])
 	xuat2();
 	return 0;
 }
-
